@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((message) => {
-  if (message.action === "MESSAGE_FROM_BG") {
-    console.log("### Received message from background", message.payload);
+  if (message.action === "CHANGE_BG") {
+    document.body.style.background = "yellow";
   }
 });
 
